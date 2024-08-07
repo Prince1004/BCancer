@@ -4,13 +4,22 @@ Dataset Acquisition and Preparation
 1. Download the Dataset:
 DB link : https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data
 Attached the DB in git
+
+
 3. Data Preparation:
 Dropped Unwanted Columns and Encoded Categorical features
-Standardized the data 
+Standardized the data
+
+
+
 Step 3: Feature Selection
 Used Seleck K best and RFE Methods to find best 10 features
+
+
 Step 4:Model Tuning
 Perofmed Grid Search Cross-Validation, RandomizedSearchCV 
+
+
 Step 5: Implementing an Artificial Neural Network (ANN) Model
 Model Architecture
 Input Layer:
@@ -44,6 +53,8 @@ Training Accuracy: 96.04%
 Testing Accuracy: 96.49%
 Conclusion
 This ANN model demonstrates effective binary classification through a well-structured architecture, careful compilation, and strategic training, achieving high accuracy on both training and test datasets.
+
+
 
 Stream lit appliction output
 ![image](https://github.com/user-attachments/assets/cf8e6d90-f55f-4c81-82f7-6a8e2a98b021)
