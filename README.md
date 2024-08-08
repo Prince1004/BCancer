@@ -24,8 +24,11 @@ pip install -r requirements.txt
 Ensure the following files are in the project directory:
 
 ann_model.h5 (The trained ANN model)
+
 kbest.pkl (The pickled feature selector)
+
 scaler.pkl (The pickled scaler)
+
 If these files are not present, you may need to train the model and save these artifacts.
 
 Deployment 
