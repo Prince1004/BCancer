@@ -1,26 +1,58 @@
 # BCancer
 Cancer Prediction
+
+
+
+
+
 Dataset Acquisition and Preparation
 1. Download the Dataset:
 DB link : https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data
 Attached the DB in git
 
+cd BreastCancerAnalysis
 
-3. Data Preparation:
+2. Create and Activate a Virtual Environment
+python -m venv env
+
+#On Windows use env\Scripts\activate to activate
+
+3. Install Dependencies
+pip install -r requirements.txt
+
+4. Download Pre-trained Model and Artifacts
+Ensure the following files are in the project directory:
+
+ann_model.h5 (The trained ANN model)
+kbest.pkl (The pickled feature selector)
+scaler.pkl (The pickled scaler)
+If these files are not present, you may need to train the model and save these artifacts.
+
+Deployment 
+
+1. Start the Streamlit App
+streamlit run app.py
+
+2. Navigate to the Web App
+ https://bcancer-rfq6h9ui3rbbo6ep9t9mbu.streamlit.app/
+
+  
+General Overview of brestcancer.ipynb
+1. Data Preparation:
 Dropped Unwanted Columns and Encoded Categorical features
 Standardized the data
 
 
 
-Step 3: Feature Selection
+2: Feature Selection
 Used Seleck K best and RFE Methods to find best 10 features
 
 
-Step 4:Model Tuning
+3:Model Tuning
 Perofmed Grid Search Cross-Validation, RandomizedSearchCV 
 
 
-Step 5: Implementing an Artificial Neural Network (ANN) Model
+4: Implementing an Artificial Neural Network (ANN) Model
 Model Architecture
 Input Layer:
 Dense Layer: Initialized with the number of neurons specified by hidden_layer_sizes[0] and an activation function determined by the best parameters.
